@@ -1,0 +1,16 @@
+:root {
+  --dse-body-text-color: #{$dark};
+  --dse-body-bg-color: #{$white};
+
+  --dse-btn-primary-color: #{$white};
+  --dse-btn-primary-bg: #{$green};
+  --dse-btn-primary-bg-hover: #{$green-light};
+
+  --dse-btn-secondary-color: #{$white};
+  --dse-btn-secondary-bg: #{$dark};
+
+  --dse-form-color: #{$dark};
+  --dse-form-bg: #{$white};
+  --dse-form-error-color: #{$red};
+  --dse-form-error-border: #{$red};
+}

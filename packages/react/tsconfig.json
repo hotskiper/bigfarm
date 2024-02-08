@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es2020",              // 编译目标
+    "module": "esnext",              // 模块系统
+    "moduleResolution": "node",      // 模块解析策略
+    "lib": ["es2019", "dom"],        // 编译时使用的库
+    "strict": true,                  // 启用所有严格类型检查选项
+    "esModuleInterop": true,          // 启用 CommonJS 模块转换为 ES6 模块
+    "skipLibCheck": true,             // 跳过声明文件的类型检查
+    "forceConsistentCasingInFileNames": true, // 文件名大小写一致性
+    "baseUrl": "./",                    // 基本路径，相对于 tsconfig.json 文件
+    "paths": {
+      "@/*": ["src/*"]                  // 路径别名，方便导入模块
+    },
+    "outDir": "./lib",                  // 编译输出目录
+    "rootDir": "./src",                  // TypeScript 源码目录
+    "declaration": true,             // 生成声明文件
+    "sourceMap": true                // 生成 source map 文件
+  },
+  "include": ["src/**/*.ts"],        // 包含的文件或文件夹
+  "exclude": ["node_modules", "lib"] // 排除的文件或文件夹
+}
