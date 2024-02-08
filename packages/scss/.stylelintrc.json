@@ -1,0 +1,11 @@
+{
+    "plugins": ["stylelint-prettier"],
+    "extends": [
+        "stylelint-config-sass-guidelines",
+        "stylelint-prettier/recommended"
+    ],
+    "rules": {
+        "selector-class-pattern": "^(?:u|is|has)-[a-z][a-zA-Z0-9]*$|^(?!u|is|has)[a-zA-Z][a-zA-Z0-9]*(?:-[a-z][a-zA-Z0-9]*)?(?:--[a-z][a-zA-Z0-9]*)?(?:__[a-z][a-zA-Z0-9]*)?$",
+        "max-nesting-depth": 3
+    }
+}
