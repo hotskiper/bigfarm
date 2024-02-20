@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "yarn lerna run test",
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev"
   },
@@ -14,14 +14,17 @@
       "packages/*",
       "playgrounds/*"
     ],
-    "nohoist": [
-      "**/normalize-scss"
-    ]
+    "installConfig": {
+      "hoistingLimits": [
+        "**/normalize-scss"
+      ]
+    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lerna": "^8.0.2"
-  }
+  },
+  "packageManager": "yarn@4.1.0"
 }
