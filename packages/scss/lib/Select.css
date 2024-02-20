@@ -145,7 +145,7 @@
   box-sizing: border-box;
   padding: 0.75rem;
 }
-.dse-select__option:hover {
+.dse-select__option--highlighted {
   background-color: var(--dse-form-bg-color-hover, #f1f2f3);
 }
 .dse-select__option--selected {

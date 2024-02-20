@@ -53,7 +53,7 @@
     box-sizing: border-box;
     @include padding("xs");
 
-    &:hover {
+    &--highlighted {
       background-color: $form-bg-color-hover;
     }
 
