@@ -9,17 +9,10 @@
     "dev": "yarn lerna run dev"
   },
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*",
-      "playgrounds/*"
-    ],
-    "installConfig": {
-      "hoistingLimits": [
-        "**/normalize-scss"
-      ]
-    }
-  },
+  "workspaces": [
+    "packages/*",
+    "playgrounds/*"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

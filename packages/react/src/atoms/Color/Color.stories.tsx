@@ -1,20 +1,20 @@
-import React from "react";
-import Color from "./Color";
-import { text, select } from "@storybook/addon-knobs";
-import { Spacing } from "@ds.e/foundation";
+import React from 'react'
+import Color from './Color'
+import { text, select } from '@storybook/addon-knobs'
+import { Spacing } from '@ds.e/foundation'
 
-import "@ds.e/scss/lib/Utilities.css";
+import '@ds.e/scss/lib/Utilities.css'
 
 export default {
-    title: "Atoms/Color",
-};
+  title: 'Atoms/Color',
+}
 
-export const common = () => <Color hexCode={text("HexCode", "pink")} />;
+export const common = () => <Color hexCode={text('HexCode', 'pink')} />
 
 export const CustomDimensions = () => (
-    <Color
-        hexCode='pink'
-        width={select("Width", Object.values(Spacing), "xxl")}
-        height={select("Height", Object.values(Spacing), "xxl")}
-    />
-);
+  <Color
+    hexCode="pink"
+    width={select('Width', Object.values(Spacing), 'xxl')}
+    height={select('Height', Object.values(Spacing), 'xxl')}
+  />
+)

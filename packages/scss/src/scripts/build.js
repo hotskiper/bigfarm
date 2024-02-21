@@ -21,6 +21,7 @@ const getComponents = ()=>{
 }
 
 const compile = (path, fileName) => {
+    // node-sass已不推荐
     // const result = Sass.render({
     //     data: Fs.readFileSync(
     //         Path.resolve(path)
@@ -28,9 +29,9 @@ const compile = (path, fileName) => {
     //     outputStyle: 'expanded',
     //     includePaths: [Path.resolve('src')]  //参数用于指定Sass查找导入文件（@import）时的附加目录
     // })
-
+    // dart-sass
     const result = Sass.compile(Path.resolve(path), {
-        loadPaths: [Path.resolve('src'), Path.resolve('')],
+        loadPaths: [Path.resolve('src'), Path.resolve(''), Path.resolve('../../')], // 可配多个,@import查找路径
         style: "expanded"
     })
 
