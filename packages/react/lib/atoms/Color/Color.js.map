@@ -1,1 +1,12 @@
-{"version":3,"file":"Color.js","sources":["../../../src/atoms/Color/Color.tsx"],"sourcesContent":["import React from \"react\";\r\nimport {Spacing} from \"@ds.e/foundation\";\r\n\r\ninterface ColorProps {\r\n    hexCode: string,\r\n    width?: keyof typeof Spacing,\r\n    height?: keyof typeof Spacing\r\n}\r\n\r\nconst Color: React.FC<ColorProps> = ({hexCode, width = Spacing.sm, height = Spacing.sm}) =>{\r\n    const className = `dse-width-${width} dse-height-${height}`;\r\n    return <div className={className} style={{\r\n        backgroundColor: hexCode\r\n    }}>\r\n\r\n    </div>\r\n}\r\n\r\nexport default Color;"],"names":[],"mappings":";;;AASA,MAAM,KAAK,GAAyB,CAAC,EAAC,OAAO,EAAE,KAAK,GAAG,OAAO,CAAC,EAAE,EAAE,MAAM,GAAG,OAAO,CAAC,EAAE,EAAC,KAAI;AACvF,IAAA,MAAM,SAAS,GAAG,CAAA,UAAA,EAAa,KAAK,CAAe,YAAA,EAAA,MAAM,EAAE,CAAC;AAC5D,IAAA,OAAO,6BAAK,SAAS,EAAE,SAAS,EAAE,KAAK,EAAE;AACrC,YAAA,eAAe,EAAE,OAAO;AAC3B,SAAA,EAAA,CAEK,CAAA;AACV;;;;"}
+{
+  "version": 3,
+  "file": "Color.js",
+  "sources": [
+    "../../../src/atoms/Color/Color.tsx"
+  ],
+  "sourcesContent": [
+    "import React from \"react\";\r\nimport {Spacing} from \"@bigfarm/foundation\";\r\n\r\ninterface ColorProps {\r\n    hexCode: string,\r\n    width?: keyof typeof Spacing,\r\n    height?: keyof typeof Spacing\r\n}\r\n\r\nconst Color: React.FC<ColorProps> = ({hexCode, width = Spacing.sm, height = Spacing.sm}) =>{\r\n    const className = `dse-width-${width} dse-height-${height}`;\r\n    return <div className={className} style={{\r\n        backgroundColor: hexCode\r\n    }}>\r\n\r\n    </div>\r\n}\r\n\r\nexport default Color;"
+  ],
+  "names": [],
+  "mappings": ";;;AASA,MAAM,KAAK,GAAyB,CAAC,EAAC,OAAO,EAAE,KAAK,GAAG,OAAO,CAAC,EAAE,EAAE,MAAM,GAAG,OAAO,CAAC,EAAE,EAAC,KAAI;AACvF,IAAA,MAAM,SAAS,GAAG,CAAA,UAAA,EAAa,KAAK,CAAe,YAAA,EAAA,MAAM,EAAE,CAAC;AAC5D,IAAA,OAAO,6BAAK,SAAS,EAAE,SAAS,EAAE,KAAK,EAAE;AACrC,YAAA,eAAe,EAAE,OAAO;AAC3B,SAAA,EAAA,CAEK,CAAA;AACV;;;;"
+}

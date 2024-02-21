@@ -1607,9 +1607,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ds.e/foundation@workspace:packages/foundation":
+"@bigfarm/foundation@workspace:packages/foundation":
   version: 0.0.0-use.local
-  resolution: "@ds.e/foundation@workspace:packages/foundation"
+  resolution: "@bigfarm/foundation@workspace:packages/foundation"
   dependencies:
     "@babel/preset-env": "npm:^7.23.9"
     "@babel/preset-typescript": "npm:^7.23.3"
@@ -1619,9 +1619,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ds.e/react@workspace:packages/react":
+"@bigfarm/react@workspace:packages/react":
   version: 0.0.0-use.local
-  resolution: "@ds.e/react@workspace:packages/react"
+  resolution: "@bigfarm/react@workspace:packages/react"
   dependencies:
     "@babel/preset-env": "npm:^7.23.9"
     "@babel/preset-react": "npm:^7.23.3"
@@ -1653,9 +1653,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ds.e/scss@workspace:packages/scss":
+"@bigfarm/scss@workspace:packages/scss":
   version: 0.0.0-use.local
-  resolution: "@ds.e/scss@workspace:packages/scss"
+  resolution: "@bigfarm/scss@workspace:packages/scss"
   dependencies:
     husky: "npm:^9.0.6"
     lint-staged: "npm:^15.2.0"
