@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Margin = ({ space = "md", children, left, right, top, bottom, }) => {
-    let className = "";
+const Margin = ({ space = 'md', children, left, right, top, bottom, }) => {
+    let className = '';
     if (!left && !right && !top && !bottom) {
         className = `dse-margin-${space}`;
     }
