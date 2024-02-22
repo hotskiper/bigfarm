@@ -6,7 +6,8 @@
   "scripts": {
     "test": "yarn lerna run test",
     "build": "yarn lerna run build",
-    "dev": "yarn lerna run dev"
+    "dev": "yarn lerna run dev",
+    "publish": "yarn test && yarn build && yarn lerna publish"
   },
   "workspaces": [
     "packages/*",

@@ -15,6 +15,9 @@
     "dev": "yarn build --w",
     "test": "jest --verbose"
   },
+  "files": [
+    "lib"
+  ],
   "publishConfig": {
     "access": "public"
   },
