@@ -10,7 +10,6 @@ lerna-debug.log*
 node_modules
 .yarn
 yarn.lock
-.husky
 
 # Editor directories and files
 .vscode/*
