@@ -1,2 +1,2 @@
 hello
-test publish
+test publish 1

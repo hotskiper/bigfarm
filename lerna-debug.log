@@ -7,12 +7,12 @@
 1 notice cli v8.1.2
 2 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
 3 verbose rootPath E:\frontend\css\scss_setup
-4 verbose session 5493189457d3aa04
+4 verbose session 5839c78464a5cae6
 5 verbose user-agent lerna/8.1.2/node@v18.15.0+x64 (win32)
 6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '8.1.2' }
 7 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
 8 verbose rootPath E:\frontend\css\scss_setup
-9 info current version 0.0.0
+9 info current version 0.1.0
 10 silly isAnythingCommitted
 11 verbose isAnythingCommitted 1
 12 silly getCurrentBranch
@@ -21,221 +21,119 @@
 15 silly isBehindUpstream
 16 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
 17 silly hasTags
-18 verbose hasTags false
-19 info Assuming all packages changed
-20 verbose updated @bigfarm/foundation
-21 verbose updated @bigfarm/react
-22 verbose updated @bigfarm/scss
-23 verbose updated @playgrounds/react
-24 verbose git-describe undefined => "9f78b95"
-25 silly git-describe parsed => {"refCount":"9","sha":"9f78b95","isDirty":false}
-26 info execute Skipping releases
-27 silly lifecycle No script for "preversion" in "scss_setup", continuing
-28 silly lifecycle No script for "preversion" in "@bigfarm/foundation", continuing
-29 silly lifecycle No script for "preversion" in "@bigfarm/react", continuing
-30 silly lifecycle No script for "preversion" in "@bigfarm/scss", continuing
-31 silly lifecycle No script for "preversion" in "@playgrounds/react", continuing
-32 verbose version @playgrounds/react has no lockfile. Skipping lockfile update.
-33 verbose version @bigfarm/scss has no lockfile. Skipping lockfile update.
-34 verbose version @bigfarm/react has no lockfile. Skipping lockfile update.
-35 verbose version @bigfarm/foundation has no lockfile. Skipping lockfile update.
-36 silly lifecycle No script for "version" in "@bigfarm/react", continuing
-37 silly lifecycle No script for "version" in "@bigfarm/foundation", continuing
-38 silly lifecycle No script for "version" in "@bigfarm/scss", continuing
-39 silly lifecycle No script for "version" in "@playgrounds/react", continuing
-40 silly lifecycle No script for "version" in "scss_setup", continuing
-41 verbose version Detected yarn version 4.1.0
-42 verbose version Updating root yarn.lock
-43 silly gitAdd [
-43 silly gitAdd   'packages/react/package.json',
-43 silly gitAdd   'packages/foundation/package.json',
-43 silly gitAdd   'packages/scss/package.json',
-43 silly gitAdd   'playgrounds/react/package.json',
-43 silly gitAdd   'lerna.json',
-43 silly gitAdd   'yarn.lock'
-43 silly gitAdd ]
-44 silly gitCommit v0.1.0
-45 verbose git [ 'commit', '-m', 'v0.1.0' ]
-46 silly gitTag v0.1.0 git tag %s -m %s
-47 verbose git [ 'tag', 'v0.1.0', '-m', 'v0.1.0' ]
-48 silly lifecycle No script for "postversion" in "@bigfarm/foundation", continuing
-49 silly lifecycle No script for "postversion" in "@bigfarm/react", continuing
-50 silly lifecycle No script for "postversion" in "@bigfarm/scss", continuing
-51 silly lifecycle No script for "postversion" in "@playgrounds/react", continuing
-52 silly lifecycle No script for "postversion" in "scss_setup", continuing
-53 info git Pushing tags...
-54 silly gitPush origin main
-55 info publish Publishing packages to npm...
-56 silly getCurrentSHA
-57 verbose getCurrentSHA 8baa73bd8b7f06ab529d6a4ee2cb27d51d0a924f
-58 silly lifecycle No script for "prepublish" in "scss_setup", continuing
-59 silly lifecycle No script for "prepare" in "scss_setup", continuing
-60 silly lifecycle No script for "prepublishOnly" in "scss_setup", continuing
-61 silly lifecycle No script for "prepack" in "scss_setup", continuing
-62 verbose pack-directory packages\foundation
-63 verbose pack-directory packages\react
-64 verbose pack-directory packages\scss
-65 silly lifecycle No script for "prepublish" in "@bigfarm/foundation", continuing
-66 silly lifecycle No script for "prepublish" in "@bigfarm/react", continuing
-67 silly lifecycle No script for "prepublish" in "@bigfarm/scss", continuing
-68 silly lifecycle No script for "prepare" in "@bigfarm/foundation", continuing
-69 silly lifecycle No script for "prepare" in "@bigfarm/react", continuing
-70 silly lifecycle No script for "prepare" in "@bigfarm/scss", continuing
-71 silly lifecycle No script for "prepublishOnly" in "@bigfarm/scss", continuing
-72 silly lifecycle No script for "prepublishOnly" in "@bigfarm/react", continuing
-73 silly lifecycle No script for "prepublishOnly" in "@bigfarm/foundation", continuing
-74 silly lifecycle No script for "prepack" in "@bigfarm/react", continuing
-75 silly lifecycle No script for "prepack" in "@bigfarm/scss", continuing
-76 silly lifecycle No script for "prepack" in "@bigfarm/foundation", continuing
-77 silly lifecycle No script for "postpack" in "@bigfarm/foundation", continuing
-78 verbose packed packages\foundation
-79 silly lifecycle No script for "postpack" in "@bigfarm/scss", continuing
-80 verbose packed packages\scss
-81 silly lifecycle No script for "postpack" in "@bigfarm/react", continuing
-82 verbose packed packages\react
-83 silly lifecycle No script for "postpack" in "scss_setup", continuing
-84 verbose publish @bigfarm/foundation
-85 verbose publish @bigfarm/react
-86 verbose publish @bigfarm/scss
-87 silly lifecycle No script for "publish" in "@bigfarm/react", continuing
-88 silly lifecycle No script for "postpublish" in "@bigfarm/react", continuing
-89 success published @bigfarm/react 0.1.0
-90 notice
-91 notice package: @bigfarm/react@0.1.0
-92 notice === Tarball Contents ===
-93 notice 1.1kB  LICENSE
-93 notice 283B   babel.config.cjs
-93 notice 253B   jest.config.cjs
-93 notice 218B   lib/atoms/Button/Button.js
-93 notice 407B   lib/atoms/Color/Color.js
-93 notice 73B    lib/atoms/Button/index.js
-93 notice 72B    lib/atoms/Color/index.js
-93 notice 71B    lib/atoms/Text/index.js
-93 notice 339B   lib/index.js
-93 notice 73B    lib/molecules/Select/index.js
-93 notice 703B   lib/atoms/Margin/Margin.js
-93 notice 416B   rollup.config.js
-93 notice 5.9kB  lib/molecules/Select/Select.js
-93 notice 274B   lib/foundation/Spacing.js
-93 notice 181B   lib/atoms/Text/Text.js
-93 notice 1.5kB  package.json
-93 notice 1.2kB  tsconfig.json
-93 notice 519B   lib/atoms/Button/Button.js.map
-93 notice 1.0kB  lib/atoms/Color/Color.js.map
-93 notice 89B    lib/atoms/Button/index.js.map
-93 notice 89B    lib/atoms/Color/index.js.map
-93 notice 89B    lib/atoms/Text/index.js.map
-93 notice 93B    lib/index.js.map
-93 notice 89B    lib/molecules/Select/index.js.map
-93 notice 1.8kB  lib/atoms/Margin/Margin.js.map
-93 notice 14.5kB lib/molecules/Select/Select.js.map
-93 notice 693B   lib/foundation/Spacing.js.map
-93 notice 467B   lib/atoms/Text/Text.js.map
-93 notice 3.4kB  src/molecules/Select/__snapshots__/Select.test.tsx.snap
-93 notice 155B   lib/atoms/Button/Button.d.ts
-93 notice 254B   lib/atoms/Color/Color.d.ts
-93 notice 36B    lib/atoms/Button/index.d.ts
-93 notice 35B    lib/atoms/Color/index.d.ts
-93 notice 36B    lib/atoms/Margin/index.d.ts
-93 notice 34B    lib/atoms/Text/index.d.ts
-93 notice 231B   lib/index.d.ts
-93 notice 36B    lib/molecules/Select/index.d.ts
-93 notice 37B    src/atoms/Button/index.ts
-93 notice 36B    src/atoms/Color/index.ts
-93 notice 33B    src/atoms/Margin/index.ts
-93 notice 35B    src/atoms/Text/index.ts
-93 notice 239B   src/index.ts
-93 notice 32B    src/molecules/Select/index.ts
-93 notice 36B    jest.setup.ts
-93 notice 1.2kB  .storybook/main.ts
-93 notice 303B   lib/atoms/Margin/Margin.d.ts
-93 notice 285B   .storybook/preview.ts
-93 notice 528B   lib/molecules/Select/Select.d.ts
-93 notice 229B   lib/foundation/Spacing.d.ts
-93 notice 136B   lib/atoms/Text/Text.d.ts
-93 notice 246B   src/atoms/Button/Button.tsx
-93 notice 529B   src/atoms/Color/Color.stories.tsx
-93 notice 517B   src/atoms/Color/Color.tsx
-93 notice 865B   src/atoms/Margin/Margin.tsx
-93 notice 730B   src/molecules/Select/Select.stories.tsx
-93 notice 2.6kB  src/molecules/Select/Select.test.tsx
-93 notice 8.6kB  src/molecules/Select/Select.tsx
-93 notice 198B   src/atoms/Text/Text.tsx
-94 notice === Tarball Details ===
-95 notice name:          @bigfarm/react
-95 notice version:       0.1.0
-95 notice filename:      bigfarm-react-0.1.0.tgz
-95 notice package size:  14.5 kB
-95 notice unpacked size: 54.2 kB
-95 notice shasum:        3f1414661ce9bcb05522560e74c45f77ccb2f34a
-95 notice integrity:     sha512-UpQkexq63aESi[...]gJ59D3wAIJRGQ==
-95 notice total files:   58
-96 notice
-97 silly lifecycle No script for "publish" in "@bigfarm/scss", continuing
-98 silly lifecycle No script for "postpublish" in "@bigfarm/scss", continuing
-99 success published @bigfarm/scss 0.1.0
-100 notice
-101 notice package: @bigfarm/scss@0.1.0
-102 notice === Tarball Contents ===
-103 notice 1.1kB  LICENSE
-103 notice 3.9kB  lib/Button.css
-103 notice 11.2kB lib/global.css
-103 notice 6.1kB  lib/Margin.css
-103 notice 3.9kB  lib/Panel.css
-103 notice 5.0kB  lib/Select.css
-103 notice 3.9kB  lib/Text.css
-103 notice 4.5kB  lib/Utilities.css
-103 notice 1.4kB  src/scripts/build.js
-103 notice 391B   .stylelintrc.json
-103 notice 912B   package.json
-103 notice 88B    src/foundation/_all.scss
-103 notice 1.8kB  src/foundation/_colors.scss
-103 notice 838B   src/foundation/_mixins.scss
-103 notice 338B   src/base/_reset.scss
-103 notice 407B   src/base/_root.scss
-103 notice 1.7kB  src/foundation/_typography.scss
-103 notice 3.0kB  src/foundation/_variables.scss
-103 notice 131B   src/atoms/Button.scss
-103 notice 560B   src/global.scss
-103 notice 254B   src/atoms/Margin.scss
-103 notice 92B    src/molecules/Panel.scss
-103 notice 1.2kB  src/molecules/Select.scss
-103 notice 68B    src/atoms/Text.scss
-103 notice 160B   src/atoms/Utilities.scss
-104 notice === Tarball Details ===
-105 notice name:          @bigfarm/scss
-105 notice version:       0.1.0
-105 notice filename:      bigfarm-scss-0.1.0.tgz
-105 notice package size:  8.6 kB
-105 notice unpacked size: 52.9 kB
-105 notice shasum:        cef4c24693e5cd7e0ba6c685b9a53cd9ec77ca5a
-105 notice integrity:     sha512-k6UrnHe9q4pDC[...]uV5wfPb/jHTWQ==
-105 notice total files:   25
-106 notice
-107 silly FetchError: request to https://registry.npmjs.org/@bigfarm%2ffoundation failed, reason: socket hang up
-107 silly     at ClientRequest.<anonymous> (E:\frontend\css\scss_setup\node_modules\minipass-fetch\lib\index.js:130:14)
-107 silly     at ClientRequest.emit (node:events:513:28)
-107 silly     at TLSSocket.socketOnEnd (node:_http_client:526:9)
-107 silly     at TLSSocket.emit (node:events:525:35)
-107 silly     at endReadableNT (node:internal/streams/readable:1359:12)
-107 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
-107 silly  FetchError: request to https://registry.npmjs.org/@bigfarm%2ffoundation failed, reason: socket hang up
-107 silly     at ClientRequest.<anonymous> (E:\frontend\css\scss_setup\node_modules\minipass-fetch\lib\index.js:130:14)
-107 silly     at ClientRequest.emit (node:events:513:28)
-107 silly     at TLSSocket.socketOnEnd (node:_http_client:526:9)
-107 silly     at TLSSocket.emit (node:events:525:35)
-107 silly     at endReadableNT (node:internal/streams/readable:1359:12)
-107 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-107 silly   code: 'ECONNRESET',
-107 silly   errno: 'ECONNRESET',
-107 silly   type: 'system'
-107 silly }
-108 warn notice Package failed to publish: @bigfarm/foundation
-109 error ECONNRESET request to https://registry.npmjs.org/@bigfarm%2ffoundation failed, reason: socket hang up
-110 error errno "ECONNRESET" is not a valid exit code - exiting with code 1
-111 error FetchError: request to https://registry.npmjs.org/@bigfarm%2ffoundation failed, reason: socket hang up
-111 error     at ClientRequest.<anonymous> (E:\frontend\css\scss_setup\node_modules\minipass-fetch\lib\index.js:130:14)
-111 error     at ClientRequest.emit (node:events:513:28)
-111 error     at TLSSocket.socketOnEnd (node:_http_client:526:9)
-111 error     at TLSSocket.emit (node:events:525:35)
-111 error     at endReadableNT (node:internal/streams/readable:1359:12)
+18 verbose hasTags true
+19 silly git-describe.sync "v0.1.0-1-gdd2bb39" => {"lastTagName":"v0.1.0","lastVersion":"v0.1.0","refCount":"1","sha":"dd2bb39","isDirty":false}
+20 info Looking for changed packages since v0.1.0
+21 silly checking diff packages/foundation
+22 silly found diff in packages/foundation/package.json
+23 verbose filtered diff [ 'packages/foundation/package.json' ]
+24 silly checking diff packages/react
+25 silly found diff in packages/react/package.json
+26 verbose filtered diff [ 'packages/react/package.json' ]
+27 silly checking diff packages/scss
+28 silly found diff in packages/scss/package.json
+29 verbose filtered diff [ 'packages/scss/package.json' ]
+30 silly checking diff playgrounds/react
+31 silly no diff found in @playgrounds/react
+32 verbose updated @bigfarm/foundation
+33 verbose updated @bigfarm/react
+34 verbose updated @bigfarm/scss
+35 verbose git-describe undefined => "v0.1.0-1-gdd2bb39"
+36 silly git-describe parsed => {"lastTagName":"v0.1.0","lastVersion":"v0.1.0","refCount":"1","sha":"dd2bb39","isDirty":false}
+37 info execute Skipping releases
+38 silly lifecycle No script for "preversion" in "scss_setup", continuing
+39 silly lifecycle No script for "preversion" in "@bigfarm/foundation", continuing
+40 silly lifecycle No script for "preversion" in "@bigfarm/react", continuing
+41 silly lifecycle No script for "preversion" in "@bigfarm/scss", continuing
+42 silly lifecycle No script for "preversion" in "@playgrounds/react", continuing
+43 verbose version @bigfarm/react has no lockfile. Skipping lockfile update.
+44 verbose version @bigfarm/foundation has no lockfile. Skipping lockfile update.
+45 verbose version @playgrounds/react has no lockfile. Skipping lockfile update.
+46 verbose version @bigfarm/scss has no lockfile. Skipping lockfile update.
+47 silly lifecycle No script for "version" in "@bigfarm/react", continuing
+48 silly lifecycle No script for "version" in "@bigfarm/scss", continuing
+49 silly lifecycle No script for "version" in "@playgrounds/react", continuing
+50 silly lifecycle No script for "version" in "@bigfarm/foundation", continuing
+51 silly lifecycle No script for "version" in "scss_setup", continuing
+52 verbose version Detected yarn version 4.1.0
+53 verbose version Updating root yarn.lock
+54 silly gitAdd [
+54 silly gitAdd   'packages/react/package.json',
+54 silly gitAdd   'packages/scss/package.json',
+54 silly gitAdd   'playgrounds/react/package.json',
+54 silly gitAdd   'packages/foundation/package.json',
+54 silly gitAdd   'lerna.json',
+54 silly gitAdd   'yarn.lock'
+54 silly gitAdd ]
+55 silly gitCommit v1.0.0
+56 verbose git [ 'commit', '-m', 'v1.0.0' ]
+57 silly gitTag v1.0.0 git tag %s -m %s
+58 verbose git [ 'tag', 'v1.0.0', '-m', 'v1.0.0' ]
+59 silly lifecycle No script for "postversion" in "@bigfarm/foundation", continuing
+60 silly lifecycle No script for "postversion" in "@bigfarm/react", continuing
+61 silly lifecycle No script for "postversion" in "@bigfarm/scss", continuing
+62 silly lifecycle No script for "postversion" in "@playgrounds/react", continuing
+63 silly lifecycle No script for "postversion" in "scss_setup", continuing
+64 info git Pushing tags...
+65 silly gitPush origin main
+66 info publish Publishing packages to npm...
+67 silly getCurrentSHA
+68 verbose getCurrentSHA 1e968abec5e267be425a7545ca6f0c1aa689231b
+69 silly lifecycle No script for "prepublish" in "scss_setup", continuing
+70 silly lifecycle No script for "prepare" in "scss_setup", continuing
+71 silly lifecycle No script for "prepublishOnly" in "scss_setup", continuing
+72 silly lifecycle No script for "prepack" in "scss_setup", continuing
+73 verbose pack-directory packages\foundation
+74 verbose pack-directory packages\react
+75 verbose pack-directory packages\scss
+76 silly lifecycle No script for "prepublish" in "@bigfarm/foundation", continuing
+77 silly lifecycle No script for "prepublish" in "@bigfarm/react", continuing
+78 silly lifecycle No script for "prepublish" in "@bigfarm/scss", continuing
+79 silly lifecycle No script for "prepare" in "@bigfarm/foundation", continuing
+80 silly lifecycle No script for "prepare" in "@bigfarm/react", continuing
+81 silly lifecycle No script for "prepare" in "@bigfarm/scss", continuing
+82 silly lifecycle No script for "prepublishOnly" in "@bigfarm/foundation", continuing
+83 silly lifecycle No script for "prepublishOnly" in "@bigfarm/react", continuing
+84 silly lifecycle No script for "prepublishOnly" in "@bigfarm/scss", continuing
+85 silly lifecycle No script for "prepack" in "@bigfarm/react", continuing
+86 silly lifecycle No script for "prepack" in "@bigfarm/foundation", continuing
+87 silly lifecycle No script for "prepack" in "@bigfarm/scss", continuing
+88 silly lifecycle No script for "postpack" in "@bigfarm/scss", continuing
+89 verbose packed packages\scss
+90 silly lifecycle No script for "postpack" in "@bigfarm/foundation", continuing
+91 verbose packed packages\foundation
+92 silly lifecycle No script for "postpack" in "@bigfarm/react", continuing
+93 verbose packed packages\react
+94 silly lifecycle No script for "postpack" in "scss_setup", continuing
+95 verbose publish @bigfarm/foundation
+96 verbose publish @bigfarm/react
+97 verbose publish @bigfarm/scss
+98 warn publish Package is already published: @bigfarm/foundation@1.0.0
+99 warn publish Package is already published: @bigfarm/react@1.0.0
+100 silly FetchError: request to https://registry.npmjs.org/@bigfarm%2fscss failed, reason: socket hang up
+100 silly     at ClientRequest.<anonymous> (E:\frontend\css\scss_setup\node_modules\minipass-fetch\lib\index.js:130:14)
+100 silly     at ClientRequest.emit (node:events:513:28)
+100 silly     at TLSSocket.socketOnEnd (node:_http_client:526:9)
+100 silly     at TLSSocket.emit (node:events:525:35)
+100 silly     at endReadableNT (node:internal/streams/readable:1359:12)
+100 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+100 silly  FetchError: request to https://registry.npmjs.org/@bigfarm%2fscss failed, reason: socket hang up
+100 silly     at ClientRequest.<anonymous> (E:\frontend\css\scss_setup\node_modules\minipass-fetch\lib\index.js:130:14)
+100 silly     at ClientRequest.emit (node:events:513:28)
+100 silly     at TLSSocket.socketOnEnd (node:_http_client:526:9)
+100 silly     at TLSSocket.emit (node:events:525:35)
+100 silly     at endReadableNT (node:internal/streams/readable:1359:12)
+100 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+100 silly   code: 'ECONNRESET',
+100 silly   errno: 'ECONNRESET',
+100 silly   type: 'system'
+100 silly }
+101 warn notice Package failed to publish: @bigfarm/scss
+102 error ECONNRESET request to https://registry.npmjs.org/@bigfarm%2fscss failed, reason: socket hang up
+103 error errno "ECONNRESET" is not a valid exit code - exiting with code 1
+104 error FetchError: request to https://registry.npmjs.org/@bigfarm%2fscss failed, reason: socket hang up
+104 error     at ClientRequest.<anonymous> (E:\frontend\css\scss_setup\node_modules\minipass-fetch\lib\index.js:130:14)
+104 error     at ClientRequest.emit (node:events:513:28)
+104 error     at TLSSocket.socketOnEnd (node:_http_client:526:9)
+104 error     at TLSSocket.emit (node:events:525:35)
+104 error     at endReadableNT (node:internal/streams/readable:1359:12)
