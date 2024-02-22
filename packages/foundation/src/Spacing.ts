@@ -18,8 +18,11 @@ const spaces:{
     s: 's',
     sm: 'sm',
     md: 'md',
+    // 24px
     lg: 'lg',
+    // 32px
     xl: 'xl',
+    // 48px
     xxl: 'xxl',
     xxxl: 'xxxl'
 }
