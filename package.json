@@ -8,7 +8,8 @@
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev",
     "publish": "yarn test && yarn build && yarn lerna publish",
-    "commit": "yarn git-cz"
+    "commit": "yarn git-cz",
+    "prepare": "husky"
   },
   "config": {
     "commitizen": {
