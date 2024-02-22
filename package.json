@@ -8,8 +8,7 @@
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev",
     "publish": "yarn test && yarn build && yarn lerna publish",
-    "commit": "yarn git-cz",
-    "prepare": "husky"
+    "commit": "yarn git-cz"
   },
   "config": {
     "commitizen": {
@@ -22,6 +21,7 @@
   ],
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "keywords": [],
