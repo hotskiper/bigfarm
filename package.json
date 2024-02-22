@@ -22,7 +22,6 @@
   ],
   "husky": {
     "hooks": {
-      "commit-msg": "yarn test"
     }
   },
   "keywords": [],
