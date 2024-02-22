@@ -18,5 +18,9 @@
   "devDependencies": {
     "lerna": "^8.0.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hotskiper/bigfarm.git"
+  },
   "packageManager": "yarn@4.1.0"
 }
