@@ -1,2 +1,2 @@
 hello
-test publish 1
+test commit
