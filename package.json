@@ -19,11 +19,7 @@
     "packages/*",
     "playgrounds/*"
   ],
-  "husky": {
-    "hooks": {
-      "commit-msg": ""
-    }
-  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
