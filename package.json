@@ -9,9 +9,7 @@
     "dev": "yarn lerna run dev",
     "publish": "yarn test && yarn build && yarn lerna publish",
     "commit": "yarn git-cz",
-    "postinstall": "husky",
-     
-    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS"
+    "prepare": "husky"
   },
   "config": {
     "commitizen": {
@@ -22,11 +20,6 @@
     "packages/*",
     "playgrounds/*"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
