@@ -1,6 +1,6 @@
 {
   "name": "@bigfarm/react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "type": "module",
   "license": "MIT",
@@ -41,7 +41,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "build-storybook"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "publishConfig": {
     "access": "public"
   },
