@@ -41,6 +41,12 @@ const compile = (path, fileName) => {
     )
 }
 
+const libPath = Path.resolve('lib')
+
+if(!Fs.existsSync(libPath)){
+    Fs.mkdirSync(libPath)
+}
+
 compile('src/global.scss', 'lib/global.css')
 // console.log(getComponents())
 
