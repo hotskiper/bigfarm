@@ -13,9 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+        with: 
+          node-version: 18
+          registry-url: https://registry.yarnpkg.com/
       - name: Install dependencies
-        run: yarn
+        run: yarn install
       - name: Build packages
         run: yarn build
       - name: Automated tests
