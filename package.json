@@ -16,10 +16,12 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "workspaces": [
-    "packages/*",
-    "playgrounds/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "playgrounds/*"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
