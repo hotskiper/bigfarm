@@ -1558,7 +1558,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bigfarm/foundation@workspace:packages/foundation":
+"@bigfarm/foundation@npm:*, @bigfarm/foundation@workspace:packages/foundation":
   version: 0.0.0-use.local
   resolution: "@bigfarm/foundation@workspace:packages/foundation"
   dependencies:
@@ -1570,13 +1570,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigfarm/react@workspace:packages/react":
+"@bigfarm/react@npm:*, @bigfarm/react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "@bigfarm/react@workspace:packages/react"
   dependencies:
     "@babel/preset-env": "npm:^7.23.9"
     "@babel/preset-react": "npm:^7.23.3"
     "@babel/preset-typescript": "npm:^7.23.3"
+    "@bigfarm/foundation": "npm:*"
     "@storybook/addon-a11y": "npm:^7.6.17"
     "@storybook/addon-essentials": "npm:^7.6.16"
     "@storybook/addon-interactions": "npm:^7.6.16"
@@ -1608,6 +1609,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bigfarm/scss@workspace:packages/scss"
   dependencies:
+    "@bigfarm/foundation": "npm:*"
     husky: "npm:^9.0.6"
     lint-staged: "npm:^15.2.0"
     nodemon: "npm:^3.0.3"
@@ -3259,6 +3261,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@playgrounds/react@workspace:playgrounds/react"
   dependencies:
+    "@bigfarm/react": "npm:*"
     "@types/react": "npm:^18.2.57"
     "@types/react-dom": "npm:^18.2.17"
     "@typescript-eslint/eslint-plugin": "npm:^6.14.0"

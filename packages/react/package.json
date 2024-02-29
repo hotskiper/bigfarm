@@ -4,6 +4,9 @@
   "main": "lib/index.js",
   "type": "module",
   "license": "MIT",
+  "dependencies": {
+    "@bigfarm/foundation": "*"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.23.9",
     "@babel/preset-react": "^7.23.3",

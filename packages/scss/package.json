@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@bigfarm/foundation": "*",
     "normalize-scss": "^8.0.0"
   },
   "devDependencies": {
